@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsweb</title>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---css style-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo_podcas" src="./img/logo_podcas.jpg" width="120px" />
+
+      <div class="inputSearch desktop">
+        <form id="searchForm">
+          <input type="text" placeholder="Type to search..." id="searchInput" />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </form>
+      </div>
+      <nav class="desktop">
+        <ul>
+          <li onclick="search('news')">Actualidad</li>
+          <li onclick="search('international')">Internacionales</li>
+          <li onclick="search('business')">Negocios</li>
+          <li onclick="search('sports')">Deportes</li>
+          <li onclick="search('education')">Educación</li>
+          <li onclick="search('technology')">Tecnología</li>
+          <li onclick="search('culture')">Cultura</li>
+          <li onclick="search('entertainment')">Entretenimiento</li>
+          <li onclick="search('opinion')">Opinión</li>
+          <li onclick="search('tv')">TV</li>
+          <li onclick="search('tech')">Tecnología</li>
+          <li onclick="search('food')">Comida</li>
+          <li onclick="search('movies')">Películas</li>
+        </ul>
+        
+        
+      </nav>
+
+      <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!------>
+      <div class="mobile hidden">
+        <nav>
+          <ul>
+            <li onclick="search('news')">Actualidad</li>
+            <li onclick="search('international')">Internacionales</li>
+            <li onclick="search('business')">Negocios</li>
+            <li onclick="search('sports')">Deportes</li>
+            <li onclick="search('education')">Educación</li>
+            <li onclick="search('technology')">Tecnología</li>
+            <li onclick="search('culture')">Cultura</li>
+            <li onclick="search('entertainment')">Entretenimiento</li>
+            <li onclick="search('opinion')">Opinión</li>
+            <li onclick="search('tv')">TV</li>
+            <li onclick="search('tech')">Tecnología</li>
+            <li onclick="search('food')">Comida</li>
+            <li onclick="search('movies')">Películas</li>
+          </ul>
+          
+        </nav>
+        <div class="inputSearch">
+        <form id="searchFormMobile" id="searchInputMobile">
+          <input type="text" placeholder="Type to search..." />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </div>
+        </form>
+      </div>
+    </header>
+
+    <!-- main  -->
+
+    <main></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
